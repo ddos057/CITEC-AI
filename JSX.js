@@ -109,3 +109,4 @@ document.getElementById('profileForm').onsubmit = function(e) {
     alert(`Profile saved!\nUsername: ${username}\nEmail: ${email}`);
     profileModal.style.display = 'none';
 };
+
