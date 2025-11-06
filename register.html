@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>custompro - Create Account</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS.css" />
+</head>
+<body>
+    <div class="topbar">
+        Get AI power in your academic inquiries!
+    </div>
+    <main class="main">
+        <div class="logo">custompro</div>
+        <div class="form-container">
+            <h2>Create your account</h2>
+            <form id="createAccountForm">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required />
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="name@example.com" required />
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter a strong password" required />
+
+                <button type="submit" class="submit-btn">Create Account</button>
+            </form>
+        </div>
+    </main>
+    <script>
+        document.getElementById('createAccountForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // handle here form submission, validations, send data to backend, etc.
+            alert('Account creation submitted!');
+        });
+    </script>
+</body>
+</html>
